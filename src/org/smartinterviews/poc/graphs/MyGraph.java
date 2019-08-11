@@ -24,7 +24,7 @@ public class MyGraph {
     public List<ArrayList<Integer>> adjMatrix = new LinkedList<>();
 
     // constructor to construct graph
-    private MyGraph(List<Edge> edges) {
+    public MyGraph(List<Edge> edges) {
 
         adjMatrix.add(0, null);
 
@@ -42,7 +42,7 @@ public class MyGraph {
         }
     }
 
-    private static void printGraph(MyGraph graph) {
+    public static void printGraph(MyGraph graph) {
         int src = 1;
         int n = graph.adjMatrix.size();
         while (src < n) {
